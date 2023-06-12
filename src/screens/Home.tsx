@@ -38,44 +38,50 @@ export default function Home() {
         className="w-full h-screen "
         contentContainerStyle={{ paddingBottom: bottom, paddingTop: top }}
       >
-        <View className="w-full h-screen flex-col items-center justify-center p-3 ">
-          <View className="w-full  flex flex-col  items-center justify-center  gap-y-2 p-5 rounded-lg">
+        <View className="w-full p-5 ">
+          <Text className="font-bold text-[22px] text-white">App Conven</Text>
+          <Text className="text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rem
+            harum sequi suscipit excepturi consequatur
+          </Text>
+        </View>
+        <View className="w-full h-screen flex-col items-center justify-center p-3 mt-[-15vh] ">
+          <View className="w-full  flex flex-col  items-center justify-center bg-white/20  gap-y-6 p-5 rounded-lg">
             <View className="w-full flex flex-col gap-y-1">
-              <View className="font-bold mb-1 flex flex-row items-center">
-                <Ionicons name="server" size={22} />
-                <Text className="font-bold ml-2">Servidor</Text>
+              <View className="w-full flex relative flex-row shadow-lg items-center shadow-black bg-white   p-2 rounded-lg  ">
+                <TextInput
+                  passwordRules="true"
+                  className="border-none"
+                  placeholder="usuario"
+                />
+                <View className="absolute right-5">
+                  <Ionicons name="server" size={20} color="#3E3E3E" />
+                </View>
               </View>
-              <TextInput
-                passwordRules="true"
-                className="border border-zinc-400 bg-white p-2 rounded-lg focus:border-green-500 "
-                placeholder="EX: abc"
-              />
             </View>
 
             <View className="w-full flex flex-col gap-y-1">
-              <View className="font-bold mb-1 flex flex-row items-center">
-                <Ionicons name="person" size={22} />
-                <Text className="font-bold ml-2">Servidor</Text>
+              <View className="w-full flex relative flex-row shadow-lg items-center shadow-black bg-white   p-2 rounded-lg  ">
+                <TextInput className="border-none" placeholder="Usuario" />
+                <View className="absolute right-5">
+                  <Ionicons name="person" size={20} color="#3E3E3E" />
+                </View>
               </View>
-              <TextInput
-                passwordRules="true"
-                className="border border-zinc-400 bg-white p-2 rounded-lg focus:border-green-500 "
-                placeholder="EX: abc"
-              />
             </View>
 
             <View className="w-full flex flex-col gap-y-1">
-              <View className="font-bold mb-1 flex flex-row items-center">
-                <Ionicons name="lock-closed" size={22} />
-                <Text className="font-bold ml-2">Servidor</Text>
+              <View className="w-full flex relative flex-row shadow-lg items-center shadow-black bg-white   p-2 rounded-lg  ">
+                <TextInput
+                  passwordRules="true"
+                  className="border-none"
+                  placeholder="Senha"
+                />
+                <View className="absolute right-5">
+                  <Ionicons name="lock-closed" size={20} color="#3E3E3E" />
+                </View>
               </View>
-              <TextInput
-                passwordRules="true"
-                className="border border-zinc-400 bg-white p-2 rounded-lg focus:border-green-500 "
-                placeholder="EX: *******"
-              />
             </View>
-            <View className="self-end my-10">
+            <View className="self-end my-10 mt-10">
               <ToggleSwitch
                 isOn={togle}
                 onColor="green"
